@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For you</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="envelope-wrapper flap">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>For Syafa Aulianissa</strong>
+            <p>haii syaff makasih ya udah lu udah peduli sama gw lu juga selalu 
+              support gw, maaf ya kalau gw suka buat lu kesel atau gimana, tapi makasih ya lu selalu bisa ngertiin gw, gw beruntung bisa ketemu lu gw gatau mau jelasin gimana tapi gw beruntung banget, lu bisa selalu ada pas gw lagi kenapa kenapa, dan lu juga selalu kasih motivasi buat gw, makasih banyak ya, gw harap kalau kita udah lulus gw masih bisa komunikasi sama lu terus, makasih banyak yaaa syafff
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="heart"></div>
+ <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const envelope = document.querySelector('.envelope-wrapper');
+  const letter = document.querySelector('.letter');
+
+  envelope.addEventListener('click', () => {
+    // Check if the 'flap' class is present, indicating that the envelope is open
+    if (!envelope.classList.contains('flap')) {
+      // If the envelope is not open, change the z-index of .letter to 0
+      letter.style.zIndex = '2';
+    } else {
+      // If the envelope is open, change the z-index of .letter to 3
+      letter.style.zIndex = '0';
+    }
+
+    // Toggle the 'flap' class on the envelope
+    envelope.classList.toggle('flap');
+  });
+});
+
+ </script>
+</body>
+</html>
